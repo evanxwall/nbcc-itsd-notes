@@ -1,0 +1,25 @@
+﻿@model ModelExample.Models.Product
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Product</h2>
+<form action="/Products/Create" method="post">
+    <div class="form-group">
+        @Html.LabelFor(m => m.ProductId)
+        @Html.TextBoxFor(m => m.ProductId, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.ProductId, "", new { @class = "text-danger" })
+
+    </div>
+    <div class="form-group">
+        <label>Product Name</label>
+        <input type="text" class="form-control" id="txtProductName" placeholder="Product Name" name="ProductName">
+    </div>
+    <div class="form-group">
+        <label>Rate</label>
+        <input type="text" class="form-control" id="txtRate" placeholder="Rate" name="Rate">
+    </div>
+    <button class="btn btn-success">Submit</button>
+</form>
+@Html.ValidationSummary()
+<!-- Litterally All you need, just make it look good with CSS -->
