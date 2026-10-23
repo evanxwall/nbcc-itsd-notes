@@ -1,0 +1,29 @@
+﻿@model List<ModelDemo.Models.Product>
+<!-- This also goes at the very top, binding the list to the view -->
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+
+    // Show a list of products
+}
+
+<a href="@Url.Action("Create", "Products")">Create Product</a>
+
+<h2>Products</h2>
+<table class="table">
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Rate</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+           <tr> 
+                <td>@item.ProductId</td>
+                <td><a href="/Products/Details/@item.ProductId">@item.ProductName</a></td>
+                <td>@item.Rate</td>
+          </tr>
+         }
+</table>
+
+
