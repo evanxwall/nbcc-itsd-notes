@@ -16,7 +16,7 @@ As of right now, this is ran and organized by one student but things will be add
 They are examples from the textbook or external resources. They will be primarily code snippets showing a simple example and then a small example showing them being used in some sort of app.
 
 ## Other Info
-I do my notes with Obsidan, I will try and format all the Markdown files to look good and be visually appealing so is not required to view them. If you also use Obsidian, You should be able to drag and drop these into a vault without issue\
+I do my notes with Obsidan, I will try and format all the Markdown files to look good and be visually appealing so is not required to view them. If you also use Obsidian, You should be able to drag and drop these into a vault without issue
 
 ## Repo Directory Structure
 
